@@ -1,1 +1,5 @@
-<h1>스텝업 홈페이지 메인</h1>
+<?php get_header(); ?>
+<div class="main_container">
+
+</div>
+<?php get_footer(); ?>

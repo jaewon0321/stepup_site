@@ -18,8 +18,153 @@ Tags:
  * Link styles
  * https://github.com/WordPress/gutenberg/issues/42319
  */
- 
- .main_container {
-	background-color: black;
-	height: 500px;
- }
+
+/* reset_style */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
+aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	vertical-align: baseline;
+}
+
+body {
+	background-color: #252525;
+	color: #ededed;
+	line-height: 1;
+}
+ol, ul, li {list-style: none;}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* common */
+h1 {
+	display: inline-block;
+	margin-top: 4px;
+	font-size: 2.3rem;
+}
+h2 {font-size: 1.9rem;}
+
+header {
+	margin: 10px auto 0;
+	width: 55vw;
+	height: 80px;
+}
+
+.right {
+	float: right;
+}
+
+.search {
+	margin-top: 4px;
+}
+
+.search input {
+	height: 2.5rem;
+}
+
+.main_container {
+	margin: 10px auto 0;
+	padding: 0 0.5vw;
+	width: 54vw;
+}
+
+.title_content {
+	height: 80px;
+}
+
+.title_content .write {
+	display: flex;
+	flex-direction: row-reverse;
+	height: 2rem;
+}
+
+.title_content .write a {
+	line-height: 2rem;
+}
+
+/* 메인 페이지 */
+.main_page .main_content {
+	height: 70vh;
+}
+
+.main_page .main_content .list {
+	table-layout: fixed;
+	margin-top: 2.2rem;
+	width: 100%;
+}
+
+.main_page .main_content .list tr {
+	border-top: 2px solid #454545;
+}
+
+.main_page .main_content .list tr:nth-last-child(1) {
+	border-bottom: 2px solid #454545;
+}
+
+.main_page .main_content .list tr:nth-child(1) {
+	height: 3rem;
+	line-height: 3rem;
+}
+
+.main_page .main_content .list th:nth-child(1) {
+	width: 6%;
+}
+.main_page .main_content .list th:nth-child(2) {
+	width: 63%;
+}
+.main_page .main_content .list th:nth-child(3) {
+	width: 14%;
+}
+.main_page .main_content .list th:nth-child(4) {
+	width: 11%;
+}
+.main_page .main_content .list th:nth-child(5) {
+	width: 6%;
+}
+
+.main_page .main_content .list td {
+	line-height: 40px;
+	text-align: center;
+}
+
+.main_page .main_content .list td:nth-child(2) {
+	padding-right: 1rem;
+	text-align: left;
+}
+
+.main_page .main_content .list td a {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main_page .main_content .index_number {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	margin-top: 0.8rem;
+	height: 2.4rem;
+}
+
+.main_page .main_content .index_number li {
+	padding: 3px;
+	width: 40px;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+}
+
+/* 디테일 페이지 */
+/* .preview_content */

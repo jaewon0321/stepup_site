@@ -93,6 +93,10 @@ header {
 	line-height: 2rem;
 }
 
+textarea {
+	resize: none;
+}
+
 /* 메인 페이지 */
 .main_page .main_content {
 	height: 70vh;
@@ -280,7 +284,6 @@ header {
 	width: calc(100% - 5px);
 	height: 7rem;
 	font-size: 1.2rem;
-	resize: none;
 }
 
 .detail_page .button_area {
@@ -298,10 +301,6 @@ header {
 	margin-top: 1.9rem;
 }
 
-/* .detail_page .comment_content > ul > li {
-	padding: 1.3rem;
-} */
-
 .detail_page .comment_content ul li {
 	margin: 15px 0;
 }
@@ -315,7 +314,44 @@ header {
 
 .detail_page .comment_content > ul ul li {
 	padding: 0 0 0 0.9rem;
-} 
+}
+
+/* 글 작성 레이아웃 */
+.write_page input.title {
+	width: 390px;
+	font-size: 1.9rem;
+}
+
+.write_page input.person_img {
+	width: 100%;
+	height: 100%;
+}
+
+.write_page input.data_title {
+	height: 30px;
+}
+
+.write_page textarea {
+	width: calc(100% - 5px);
+	height: 10rem;
+	font-size: 1rem;
+}
+
+.write_page .main_content > ul > li {
+	position: relative;
+}
+
+.write_page .layer_setting {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.write_page .save_form {
+	display: flex;
+	justify-content: flex-end;
+	margin: 5rem 0;
+}
 
 /* 반응형 */
 /* @media screen and (min-width: 1280px) {
@@ -323,6 +359,7 @@ header {
 } */
 
 @media (min-width: 758px) and (max-width: 1279px) {
+	/* 공통 */
 	header {
 		margin: 10px auto 0;
 		width: 78vw;
@@ -337,6 +374,7 @@ header {
 }
 
 @media (max-width: 757px) {
+	/* 공통 */
 	header {
 		margin: 10px auto 0;
 		width: 90vw;
@@ -349,6 +387,7 @@ header {
 		width: 89vw;
 	}
 
+	/* 메인 페이지 */
 	.main_page .main_content .list {
 		margin-top: initial;
 	}
@@ -391,8 +430,44 @@ header {
 		width: initial;
 	}
 
+	/* 디테일 페이지 */
 	.detail_page .chapter {
 		position: initial;
 		margin-top: 3rem;
+	}
+
+	.write_page input.title {
+		width: initial;
+	}
+
+	.detail_page .preview_content table {
+		width: 100%
+	}
+
+	.detail_page .preview_content input.data_type {
+		width: 80px;
+	}
+
+	.detail_page .preview_content input.data_value {
+		width: 140px;
+	}
+
+	.write_page .preview_content tr:not(:nth-child(1), :nth-child(2)) th {
+		width: 30%;
+	}
+	
+	.write_page .preview_content tr:not(:nth-child(1), :nth-child(2)) td:nth-child(2) {
+		width: 50%;
+		padding-left: 1rem;
+	}
+
+	.write_page .preview_content tr:not(:nth-child(1), :nth-child(2)) td:nth-child(3) {
+		width: 20%;
+	}
+
+	.write_page .layer_setting {
+		position: initial;
+		display: flex;
+		justify-content: flex-end;
 	}
 }

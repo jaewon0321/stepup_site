@@ -14,7 +14,7 @@
         </td>
       </tr>
       <tr>
-        <th colspan="2">이름</th>
+        <th colspan="2">정보 타이틀</th>
       </tr>
       <tr>
         <th>데이터 타입</th>

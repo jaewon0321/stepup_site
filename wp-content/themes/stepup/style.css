@@ -20,9 +20,9 @@ Tags:
  */
 
 /* reset_style */
-html#top_html,#top_html body,#top_html div,#top_html span,#top_html h1,#top_html h2,#top_html h3,
-#top_html p, #top_html a, #top_html img, #top_html strong, #top_html ol, #top_html ul, #top_html li, #top_html form, #top_html label,
-#top_html table,#top_html tbody,#top_html tfoot,#top_html thead,#top_html tr,#top_html th,#top_html td,#top_html header,#top_html footer {
+html,body,div,span,h1,h2,h3,p,a,img,strong,ol,ul,li,form,label,table,tbody,tfoot,thead,tr,th,td,
+footer,header
+{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -34,7 +34,7 @@ html#top_html {
   margin-top: 0 !important;
 }
 
-#top_html body {
+body {
 	display: flex;
   flex-direction: column;
   height: 100vh;
@@ -43,29 +43,27 @@ html#top_html {
 	line-height: 1;
 }
 
-#top_html ol,
-#top_html ul,
-#top_html li {list-style: none;}
-#top_html table {
+ol, ul, li {list-style: none;}
+table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-#top_html a {
+a {
   color: inherit;
   text-decoration: none;
 }
 
 /* common */
-#top_html h1 {
+h1 {
 	display: inline-block;
 	margin-top: 4px;
 	font-size: 2.3rem;
 }
-#top_html h2 {font-size: 1.9rem;}
-#top_html h3 {font-size: 1.7rem;}
+h2 {font-size: 1.9rem;}
+h3 {font-size: 1.7rem;}
 
-#top_html header,
-#top_html footer {
+header,
+footer {
 	background-color: #323232;
 }
 
@@ -109,7 +107,7 @@ html#top_html {
 	line-height: 2rem;
 }
 
-#top_html textarea {
+textarea {
 	resize: none;
 }
 

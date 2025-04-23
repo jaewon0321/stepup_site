@@ -20,10 +20,9 @@ Tags:
  */
 
 /* reset_style */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
-aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
-nav,output,ruby,section,summary,time,mark,audio,video {
+html#top_html,#top_html body,#top_html div,#top_html span,#top_html h1,#top_html h2,#top_html h3,
+#top_html p, #top_html a, #top_html img, #top_html strong, #top_html ol, #top_html ul, #top_html li, #top_html form, #top_html label,
+#top_html table,#top_html tbody,#top_html tfoot,#top_html thead,#top_html tr,#top_html th,#top_html td,#top_html header,#top_html footer {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,34 +30,50 @@ nav,output,ruby,section,summary,time,mark,audio,video {
 	vertical-align: baseline;
 }
 
-body {
+html#top_html {
+  margin-top: 0 !important;
+}
+
+#top_html body {
+	display: flex;
+  flex-direction: column;
+  height: 100vh;
 	background-color: #252525;
 	color: #ededed;
 	line-height: 1;
 }
-ol, ul, li {list-style: none;}
-table {
+
+#top_html ol,
+#top_html ul,
+#top_html li {list-style: none;}
+#top_html table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-a {
+#top_html a {
   color: inherit;
   text-decoration: none;
 }
 
 /* common */
-h1 {
+#top_html h1 {
 	display: inline-block;
 	margin-top: 4px;
 	font-size: 2.3rem;
 }
-h2 {font-size: 1.9rem;}
-h3 {font-size: 1.7rem;}
+#top_html h2 {font-size: 1.9rem;}
+#top_html h3 {font-size: 1.7rem;}
 
-header {
-	margin: 10px auto 0;
+#top_html header,
+#top_html footer {
+	background-color: #323232;
+}
+
+.header_content {
+	margin: 0 auto;
+	padding-top: 0.7rem;
 	width: 55vw;
-	height: 80px;
+	height:57px;
 }
 
 .right {
@@ -74,9 +89,10 @@ header {
 }
 
 .main_container {
-	margin: 10px auto 0;
+	margin: 30px auto;
 	padding: 0 0.5vw;
 	width: 54vw;
+	flex: 1;
 }
 
 .title_content {
@@ -93,15 +109,17 @@ header {
 	line-height: 2rem;
 }
 
-textarea {
+#top_html textarea {
 	resize: none;
 }
 
-/* 메인 페이지 */
-.main_page .main_content {
-	height: 70vh;
+.footer_content {
+	margin: 0 auto;
+	width: 55vw;
+	height: 50px;
 }
 
+/* 메인 페이지 */
 .main_page .main_content .list {
 	table-layout: fixed;
 	margin-top: 2.2rem;
@@ -396,7 +414,7 @@ textarea {
 		display: none;
 	}
 	.main_page .main_content .list > li:nth-child(2) {
-		border-top: solid #454545;
+		border-top: 2px solid #454545;
 	}
 
 	.main_page .main_content .list ul {
